@@ -4,6 +4,10 @@
  * Переключаемая боковая панель навигации
  * выдвигающаяся по клику слева
  */
+
+ body {
+   background: #E9E9E9;
+ }
 .nav {
     /*  ширна произвольная, не стесняйтесь экспериментировать */
     width: 320px;
@@ -23,7 +27,7 @@
     -moz-transition: left 0.3s;
     transition: left 0.3s;
     /* определяем цвет фона панели */
-    background: #16a085;
+    background: #C90C0F;
     /* поверх других элементов */
     z-index: 2000;
 }
@@ -62,7 +66,7 @@
  * символ Unicode (TRIGRAM FOR HEAVEN)
 */
 .nav-toggle:after {
-    content: '\272F';
+    content: '\268C';
     text-decoration: none;
 }
 /* цвет текста при наведении */
@@ -106,7 +110,7 @@
  * вы можете испльзовать любой другой значок
 */
 [id='nav-toggle']:checked ~ .nav > .nav-toggle:after {
-    content: 'Menu \2715';
+    content: '\2715';
 }
 
 /**
@@ -139,7 +143,7 @@
     padding: 0;
     margin: 10px 0;
     text-align: center;
-    text-shadow: rgba(255, 255, 255, .1) -1px -1px 1px, rgba(0, 0, 0, .5) 1px 1px 1px;
+    color: #F9E902;
     font-size: 1.3em;
     line-height: 1.3em;
     opacity: 0;
@@ -157,7 +161,7 @@
     -webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
 }
 .nav h2 a {
-    color: #dadada;
+    color: #F9E902;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -201,30 +205,7 @@
     transform: translateX(0);
 }
 /* определяем интервалы появления пунктов меню */
-.nav > ul > li:nth-child(2) {
-    -webkit-transition: opacity .5s .2s, -webkit-transform .5s .2s;
-    transition: opacity .5s .2s, transform .5s .2s;
-}
-.nav > ul > li:nth-child(3) {
-    -webkit-transition: opacity .5s .3s, -webkit-transform .5s .3s;
-    transition: opacity .5s .3s, transform .5s .3s;
-}
-.nav > ul > li:nth-child(4) {
-    -webkit-transition: opacity .5s .4s, -webkit-transform .5s .4s;
-    transition: opacity .5s .4s, transform .5s .4s;
-}
-.nav > ul > li:nth-child(5) {
-    -webkit-transition: opacity .5s .5s, -webkit-transform .5s .5s;
-    transition: opacity .5s .5s, transform .5s .5s;
-}
-.nav > ul > li:nth-child(6) {
-    -webkit-transition: opacity .5s .6s, -webkit-transform .5s .6s;
-    transition: opacity .5s .6s, transform .5s .6s;
-}
-.nav > ul > li:nth-child(7) {
-    -webkit-transition: opacity .5s .7s, -webkit-transform .5s .7s;
-    transition: opacity .5s .7s, transform .5s .7s;
-}
+
 /**
  * оформление ссылок пунктов меню
  */
@@ -275,7 +256,7 @@
     bottom: 0;
     height: 1px;
     width: 100%;
-    background: #3bc1a0;
+    background: #F9E902;
     -webkit-transition: width .5s ease;
     transition: width .5s ease;
 }
@@ -286,7 +267,7 @@
 
 .nav > ul > li > a:hover:before {
     width: 0%;
-    background: #3bc1a0;
+    background: #F9E902;
     -webkit-transition: width .5s ease;
     transition: width .5s ease;
 }
